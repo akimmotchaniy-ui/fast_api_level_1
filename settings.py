@@ -1,9 +1,10 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+
 class Settings(BaseSettings):
     URI: str
-    SHOP_NAME_DB: str = 'shop_project'
-    BOOKS_COLLECTION: str = 'books'
+    DB_NAME: str = 'travel_agency'
+    TOURS_COLLECTION: str = 'tours'
 
     model_config = SettingsConfigDict(
         env_file='.env',

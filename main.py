@@ -3,8 +3,8 @@ from api_router import api_router
 
 
 app = FastAPI(
-    title='Book store',
-    version='2'
+    title='Travel Agency',
+    version='1',
 )
 
-app.include_router(api_router, tags=['Books'])
+app.include_router(api_router, tags=['Tours'])
