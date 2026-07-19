@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     URI: str
-    DB_NAME: str = 'travel_agency'
+    DB_NAME: str = 'tour_agency'
     TOURS_COLLECTION: str = 'tours'
 
     model_config = SettingsConfigDict(
